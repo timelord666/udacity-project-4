@@ -1,7 +1,7 @@
 var path = require('path')
 const express = require('express')
 const dotenv = require('dotenv');
-const mockAPIResponse = require('./mockAPI.js')
+
 const aylien = require('aylien_textapi');
 const bodyParser = require('body-parser');
 dotenv.config();
