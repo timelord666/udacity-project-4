@@ -31,6 +31,7 @@ app.post('/evaluate', function (req, res) {
     
     
     const article = req.body.article;
+
     
 
     nlp.sentiment({
@@ -40,6 +41,7 @@ app.post('/evaluate', function (req, res) {
     }, (err, response) => {
         if (err === null) {
             res.send(JSON.stringify(response));
+            
         } else {
             const errData = {
                 'err': true,

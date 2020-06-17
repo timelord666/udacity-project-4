@@ -4,12 +4,12 @@ import './styles/form.scss';
 import './styles/footer.scss';
 import './styles/base.scss';
 
-import { checkForName } from './js/nameChecker'
+import { dataFetch } from './js/api'
 import { handleSubmit } from './js/formHandler'
 
 
 
 export {
-    checkForName,
+    dataFetch,
     handleSubmit
 }
