@@ -16,6 +16,7 @@ export function dataFetch(text) {
                  } else {
                     resolve(
                     `
+                            Text: ${res.text} <br>
                             Polarity: ${res.polarity} <br>
                             Subjectivity: ${res.subjectivity} <br>
                             Polarity confidence: ${(Math.round((res.polarity_confidence)*100)/100) * 100}% <br>
