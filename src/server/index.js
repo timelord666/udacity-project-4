@@ -39,10 +39,10 @@ app.post('/evaluate', function (req, res) {
         'text': article
 
     }, (err, response) => {
-        if (err === null) {
+        if (err === null) { // that is from aylien docs, so despite suggestion, i didn't change it and i like it that way)
             res.send(JSON.stringify(response));
-            
-        } else {
+             
+     } else {
             const errData = {
                 'err': true,
                 'data': err
@@ -50,6 +50,7 @@ app.post('/evaluate', function (req, res) {
             res.send(JSON.stringify(errData));
         }
     });
+    
     
     
 })
